@@ -100,7 +100,7 @@ contact page
 </div>
 ```
 ## OUTPUT:
-<img width="1583" height="850" alt="Screenshot 2025-11-14 171304" src="https://github.com/user-attachments/assets/b6044402-6677-49e3-9898-43ed9b509714" />
+
 
 
 ## RESULT:
