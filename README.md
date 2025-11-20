@@ -1,5 +1,5 @@
 # Ex09 Event Registration Web Application
-## Date:
+## Date:17.11.2025
 
 ## AIM:
 To design, develop and deploy a web application for event registration.
@@ -34,73 +34,205 @@ Figma
 
 ## CODE:
 ```
+import React from "react";
+import screenshot202511202048482 from "./screenshot-2025-11-20-204848-2.png";
 
-<div style="width: 393px; height: 852px; position: relative; background: white"></div>
-<img style="width: 393px; height: 852px; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border: 1px black solid" src="https://via.placeholder.com/393x852" />
-<img style="width: 344px; height: 48px" src="https://via.placeholder.com/344x48" />
-<img style="width: 217px; height: 206px" src="https://via.placeholder.com/217x206" />
-<div style="width: 233px; height: 67px; background: #D24444; box-shadow: 4px 4px 4px; border-radius: 20px; border: 1px rgba(0, 0, 0, 0.20) solid; filter: blur(4px)"></div>
-<div style="width: 233px; height: 67px; background: #D24444; box-shadow: 4px 4px 4px; border-radius: 20px; border: 1px rgba(0, 0, 0, 0.20) solid; filter: blur(4px)"></div>
-<div style="width: 213px; height: 64px; text-align: center; color: white; font-size: 24px; font-family: Inknut Antiqua; font-weight: 400; word-wrap: break-word">REGISER</div>
-<div style="width: 213px; height: 64px; text-align: center; color: white; font-size: 24px; font-family: Inknut Antiqua; font-weight: 400; word-wrap: break-word">LOGIN</div>
-<div style="width: 340px; height: 47px; background: #D9D9D9"></div>
-<div style="width: 277px; height: 38px; text-align: center; color: #D24444; font-size: 32px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">ART EXHIBITION</div>
+export const Iphone = (): JSX.Element => {
+  return (
+    <div className="bg-[#33bbf1] w-full min-w-[393px] min-h-[852px] relative">
+      <img
+        className="absolute top-2.5 left-0 w-[393px] h-[71px] aspect-[5.69] object-cover"
+        alt="Saveetha Engineering College Header"
+        src={screenshot202511202048482}
+      />
 
-events page
+      <h1 className="absolute top-[234px] left-[71px] [font-family:'IBM_Plex_Sans_Thai-Bold',Helvetica] font-bold text-white text-5xl tracking-[0] leading-[normal]">
+        Hostel Fest
+      </h1>
 
-<div style="width: 393px; height: 852px; position: relative; background: white">
-  <img style="width: 393px; height: 852px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/393x852" />
-  <div style="width: 249px; height: 50px; left: 77px; top: 88px; position: absolute; text-align: center; color: #FC0707; font-size: 24px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">ART EXHIEXHIBITION EVEEVENTS </div>
-  <div style="width: 283px; height: 25px; left: 77px; top: 197px; position: absolute; color: #4619FA; font-size: 20px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">THE SOLO EXHIBITION</div>
-  <div style="width: 283px; height: 25px; left: 77px; top: 272px; position: absolute; color: #4619FA; font-size: 20px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">THE COLLECTIVE EXHIBITION</div>
-  <div style="width: 283px; height: 25px; left: 77px; top: 347px; position: absolute; color: #4619FA; font-size: 20px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">THE TEMPORARY EXHIBITION</div>
-  <div style="width: 283px; height: 25px; left: 77px; top: 429px; position: absolute; color: #4619FA; font-size: 20px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">THE ITINERANT EXHIBITION</div>
-  <div style="width: 283px; height: 25px; left: 77px; top: 521px; position: absolute; color: #4619FA; font-size: 20px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">THE ONLINE EXHIBITION</div>
-  <div style="width: 283px; height: 25px; left: 77px; top: 596px; position: absolute; color: #4619FA; font-size: 18px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">THE ANTHOLOGICAL EXHIBITION</div>
-  <div style="width: 283px; height: 25px; left: 77px; top: 683px; position: absolute; color: #4619FA; font-size: 18px; font-family: Kavoon; font-weight: 400; word-wrap: break-word">THE RETROSPECTIVE EXHIBITION</div>
-</div>
+      <button
+        className="absolute top-[596px] left-[71px] w-[235px] h-[85px] bg-[#ae74f5] cursor-pointer hover:bg-[#9d5fe6] transition-colors"
+        aria-label="Register for Hostel Fest"
+      >
+        <span className="absolute top-[6px] left-0 w-full text-center [font-family:'IBM_Plex_Sans_Thai-Bold',Helvetica] font-bold text-white text-5xl tracking-[0] leading-[normal]">
+          REGISTER
+        </span>
+      </button>
+    </div>
+  );
+};
 
-event registeration
+import React from "react";
 
-<div style="width: 393px; height: 852px; position: relative; background: white">
-  <img style="width: 393px; height: 852px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/393x852" />
-  <div style="width: 283px; height: 40px; left: 70px; top: 62px; position: absolute; color: #FF00D6; font-size: 24px; font-family: Hanalei Fill; font-weight: 400; word-wrap: break-word">EVENT REGISTRATION FORM</div>
-  <div style="width: 163px; height: 19px; left: 68px; top: 102px; position: absolute; color: rgba(0, 0, 0, 0.63); font-size: 15px; font-family: Adamina; font-weight: 400; word-wrap: break-word">Fill the details</div>
-  <div style="width: 163px; height: 19px; left: 68px; top: 102px; position: absolute; color: rgba(0, 0, 0, 0.63); font-size: 15px; font-family: Adamina; font-weight: 400; word-wrap: break-word">Fill the details</div>
-  <div style="width: 224px; height: 29px; left: 56px; top: 154px; position: absolute; background: #D9D9D9"></div>
-  <div style="width: 224px; height: 29px; left: 56px; top: 222px; position: absolute; background: #D9D9D9"></div>
-  <div style="width: 224px; height: 29px; left: 56px; top: 289px; position: absolute; background: #D9D9D9"></div>
-  <div style="width: 224px; height: 29px; left: 56px; top: 358px; position: absolute; background: #D9D9D9"></div>
-  <div style="width: 224px; height: 29px; left: 56px; top: 426px; position: absolute; background: #D9D9D9"></div>
-  <div style="width: 224px; height: 29px; left: 56px; top: 496px; position: absolute; background: #D9D9D9"></div>
-  <div style="width: 224px; height: 29px; left: 56px; top: 566px; position: absolute; background: #D9D9D9"></div>
-  <div style="width: 224px; height: 29px; left: 56px; top: 636px; position: absolute; background: #D9D9D9"></div>
-  <div style="width: 126px; height: 26px; left: 71px; top: 158px; position: absolute; color: black; font-size: 18px; font-family: Andada Pro; font-weight: 400; word-wrap: break-word">Full Name</div>
-  <div style="width: 126px; height: 26px; left: 71px; top: 227px; position: absolute; color: black; font-size: 18px; font-family: Andada Pro; font-weight: 400; word-wrap: break-word">Gender</div>
-  <div style="width: 126px; height: 26px; left: 71px; top: 429px; position: absolute; color: black; font-size: 18px; font-family: Andada Pro; font-weight: 400; word-wrap: break-word">Department</div>
-  <div style="width: 186px; height: 26px; left: 71px; top: 502px; position: absolute; color: black; font-size: 18px; font-family: Andada Pro; font-weight: 400; word-wrap: break-word">Mobile Number</div>
-  <div style="width: 126px; height: 26px; left: 71px; top: 569px; position: absolute; color: black; font-size: 18px; font-family: Andada Pro; font-weight: 400; word-wrap: break-word">Email ID</div>
-  <div style="width: 196px; height: 26px; left: 71px; top: 639px; position: absolute; color: black; font-size: 18px; font-family: Andada Pro; font-weight: 400; word-wrap: break-word">Events To Register</div>
-  <div style="width: 196px; height: 26px; left: 71px; top: 639px; position: absolute; color: black; font-size: 18px; font-family: Andada Pro; font-weight: 400; word-wrap: break-word">Events To Register</div>
-  <div style="width: 126px; height: 26px; left: 71px; top: 293px; position: absolute; color: black; font-size: 18px; font-family: Andada Pro; font-weight: 400; word-wrap: break-word">Age</div>
-  <div style="width: 186px; height: 26px; left: 71px; top: 360px; position: absolute; color: black; font-size: 18px; font-family: Andada Pro; font-weight: 400; word-wrap: break-word">Register Number</div>
-  <div style="width: 202px; height: 58px; left: 117px; top: 727px; position: absolute; background: #F34D4D; border-radius: 20px; border: 1px rgba(0, 0, 0, 0.20) solid"></div>
-  <div style="width: 147px; height: 59px; left: 144px; top: 743px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Andada Pro; font-weight: 700; word-wrap: break-word">REGISTER</div>
-</div>
+const eventItems = [
+  { id: 1, name: "singing" },
+  { id: 2, name: "dancing" },
+  { id: 3, name: "kho-kho" },
+  { id: 4, name: "kabadi" },
+];
 
-contact page
+export const Iphone = (): JSX.Element => {
+  return (
+    <div className="bg-[#42b9f0] w-full min-w-[393px] min-h-[852px] flex flex-col gap-[39px]">
+      <header className="ml-[39px] w-[129px] h-[79px] mt-[25px]">
+        <h1 className="[font-family:'IBM_Plex_Sans_Thai-Bold',Helvetica] font-bold text-white text-5xl tracking-[0] leading-[normal]">
+          Event
+        </h1>
+      </header>
 
-<div style="width: 393px; height: 852px; position: relative; background: white">
-  <img style="width: 393px; height: 852px; left: 0px; top: 0px; position: absolute" src="https://via.placeholder.com/393x852" />
-  <img style="width: 383px; height: 56px; left: 6px; top: 68px; position: absolute" src="https://via.placeholder.com/383x56" />
-  <div style="width: 201px; height: 39px; left: 83px; top: 170px; position: absolute; text-align: center; color: black; font-size: 24px; font-family: Andada Pro; font-weight: 800; word-wrap: break-word">THANK YOU</div>
-  <div style="width: 201px; height: 39px; left: 87px; top: 336px; position: absolute; text-align: center; color: #383DBC; font-size: 24px; font-family: Andada Pro; font-weight: 800; word-wrap: break-word">Contact us</div>
-  <div style="width: 218px; height: 13px; left: 87px; top: 244px; position: absolute; text-align: center; color: black; font-size: 14px; font-family: Andada Pro; font-weight: 500; word-wrap: break-word">An awe-inspiring showcase of creativity, each stroke and sculpture tells a story, inviting us to explore the artist's world.</div>
-  <div style="width: 267px; height: 13px; left: 60px; top: 381px; position: absolute; text-align: center; color: #DAD31E; font-size: 14px; font-family: Andada Pro; font-weight: 500; word-wrap: break-word">E-Mail<br/>savethaengineeringcollege@gmail.com<br/>Phone<br/>9063743779<br/>9863677367</div>
-</div>
+      <main className="ml-[75px] w-[259px] h-[316px]">
+        <ol className="[font-family:'IBM_Plex_Sans_Thai-Bold',Helvetica] font-bold text-white text-5xl tracking-[0] leading-[normal]">
+          {eventItems.map((item, index) => (
+            <li key={item.id}>
+              {item.name}
+              {index < eventItems.length - 1 && <br />}
+            </li>
+          ))}
+        </ol>
+      </main>
+    </div>
+  );
+};
+
+import React, { useState } from "react";
+
+export const Iphone = (): JSX.Element => {
+  const [formData, setFormData] = useState({
+    name: "",
+    age: "",
+    mobileNo: "",
+    gender: "",
+  });
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+  };
+
+  return (
+    <div className="bg-[#63b5fd] w-full min-w-[393px] min-h-[852px] relative">
+      <header className="absolute top-2.5 left-[69px] [font-family:'IBM_Plex_Sans_Thai-Bold',Helvetica] font-bold text-black text-5xl tracking-[0] leading-[normal]">
+        <h1>
+          Registration
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;form
+        </h1>
+      </header>
+
+      <form
+        onSubmit={handleSubmit}
+        className="absolute top-[190px] left-0 w-full px-[49px]"
+      >
+        <div className="space-y-[48px]">
+          <div className="flex items-center">
+            <label
+              htmlFor="name"
+              className="[font-family:'IBM_Plex_Sans_Thai-Bold',Helvetica] font-bold text-black text-5xl tracking-[0] leading-[normal] w-[280px]"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              className="flex-1 bg-white/20 border-2 border-black/10 rounded-lg px-4 py-2 text-black text-2xl focus:outline-none focus:ring-2 focus:ring-black/20"
+              aria-label="Name"
+              required
+            />
+          </div>
+
+          <div className="flex items-center">
+            <label
+              htmlFor="age"
+              className="[font-family:'IBM_Plex_Sans_Thai-Bold',Helvetica] font-bold text-black text-5xl tracking-[0] leading-[normal] w-[280px]"
+            >
+              Age
+            </label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              value={formData.age}
+              onChange={handleInputChange}
+              className="flex-1 bg-white/20 border-2 border-black/10 rounded-lg px-4 py-2 text-black text-2xl focus:outline-none focus:ring-2 focus:ring-black/20"
+              aria-label="Age"
+              min="1"
+              max="120"
+              required
+            />
+          </div>
+
+          <div className="flex items-center">
+            <label
+              htmlFor="mobileNo"
+              className="[font-family:'IBM_Plex_Sans_Thai-Bold',Helvetica] font-bold text-black text-5xl tracking-[0] leading-[normal] w-[280px]"
+            >
+              Mobile no
+            </label>
+            <input
+              type="tel"
+              id="mobileNo"
+              name="mobileNo"
+              value={formData.mobileNo}
+              onChange={handleInputChange}
+              className="flex-1 bg-white/20 border-2 border-black/10 rounded-lg px-4 py-2 text-black text-2xl focus:outline-none focus:ring-2 focus:ring-black/20"
+              aria-label="Mobile number"
+              pattern="[0-9]{10}"
+              required
+            />
+          </div>
+
+          <div className="flex items-center">
+            <label
+              htmlFor="gender"
+              className="[font-family:'IBM_Plex_Sans_Thai-Bold',Helvetica] font-bold text-black text-5xl tracking-[0] leading-[normal] w-[280px]"
+            >
+              Gender
+            </label>
+            <select
+              id="gender"
+              name="gender"
+              value={formData.gender}
+              onChange={handleInputChange}
+              className="flex-1 bg-white/20 border-2 border-black/10 rounded-lg px-4 py-2 text-black text-2xl focus:outline-none focus:ring-2 focus:ring-black/20"
+              aria-label="Gender"
+              required
+            >
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          className="absolute top-[487px] left-[-13px] [font-family:'IBM_Plex_Sans_Thai-Bold',Helvetica] font-bold text-black text-5xl tracking-[0] leading-[normal] bg-transparent hover:bg-black/10 transition-colors duration-200 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-black/30"
+          aria-label="Register Now"
+        >
+          Register Now
+        </button>
+      </form>
+    </div>
+  );
+};
+
 ```
 ## OUTPUT:
-
+![alt text](<Screenshot 2025-11-20 210848.png>)
 
 
 ## RESULT:
